@@ -1,0 +1,42 @@
+﻿@model PracticeGolfMVC0510.Models.Golfer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Golfer</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.strFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strNickname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strNickname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.intPersonID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

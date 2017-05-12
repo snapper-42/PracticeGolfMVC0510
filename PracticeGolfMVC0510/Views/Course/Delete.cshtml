@@ -1,0 +1,184 @@
+﻿@model PracticeGolfMVC0510.Models.Course
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.strCourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strCourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intStrokesForPar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intStrokesForPar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleOne)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleOne)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleTwo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleTwo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleThree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleThree)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleFour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleFour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleFive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleFive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleSix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleSix)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleSeven)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleSeven)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleEight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleEight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleNine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleNine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleEleven)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleEleven)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleTwelve)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleTwelve)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleThirteen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleThirteen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleFourteen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleFourteen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleFifteen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleFifteen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleSixteen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleSixteen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleSeventeen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleSeventeen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intHoleEighteen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intHoleEighteen)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

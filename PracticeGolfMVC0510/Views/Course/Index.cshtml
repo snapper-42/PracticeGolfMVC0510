@@ -1,0 +1,147 @@
+﻿@model IEnumerable<PracticeGolfMVC0510.Models.Course>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.strCourseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intStrokesForPar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleOne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleTwo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleThree)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleFour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleFive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleSix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleSeven)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleEight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleNine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleTen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleEleven)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleTwelve)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleThirteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleFourteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleFifteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleSixteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleSeventeen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intHoleEighteen)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.strCourseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intStrokesForPar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleOne)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleTwo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleThree)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleFour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleFive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleSix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleSeven)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleEight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleNine)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleTen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleEleven)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleTwelve)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleThirteen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleFourteen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleFifteen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleSixteen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleSeventeen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intHoleEighteen)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.intCourseID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.intCourseID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.intCourseID })
+        </td>
+    </tr>
+}
+
+</table>
